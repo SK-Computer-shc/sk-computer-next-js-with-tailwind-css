@@ -11,8 +11,8 @@ const Header = () => {
                     alt="logo SK Computer saharsa-Bihar" />
                 </Link>
 
-
-                <ul className="hidden md:flex" id="navmenu">
+                {/* navbar ka responsiveness fix krna hai Responsive nhi hai */}
+                <ul className=" flex flex-wrap" id="navmenu">
                     <li className="p-6"> <Link href='/' ><a
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                         title="Home">Home</a></Link></li>

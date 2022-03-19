@@ -40,7 +40,7 @@ export default function Home() {
 
         <div className="m-2 rounded-2xl inline-block max-w-sm shadow-lg overflow-hidden ">
           <img className="w-full" src="/assets/sk-computer-store-1.39c83483.39c83483.jpg" alt="SK Computer Saharsa store" />
-          <h6><a className="text-2xl font-semibold" href="#">Best Computer Store in Saharsa</a></h6>
+          <h6><a className="text-2xl font-semibold underline hover:no-underline" href="#">Best Computer Store in Saharsa</a></h6>
           <p className="m-2">Buy Pre Built Gaming PCs, Gaming PC Rigs, Laptops, Graphic Cards, CPUs, Motherboards, cpu
             coolers and
             much more</p>
@@ -49,7 +49,7 @@ export default function Home() {
         <div className="m-2 rounded-2xl inline-block max-w-sm shadow-lg overflow-hidden">
           <img className="w-full" src="/assets/Repair-center-Sk-Computer-saharsa.58553bc2.58553bc2.jpg"
             alt="Repair-center-Sk-Computer-saharsa" />
-          <h6><a className="text-2xl font-semibold" href="#">Fix Hardware and Software problems</a></h6>
+          <h6><a className="text-2xl font-semibold underline hover:no-underline" href="#">Fix Hardware and Software problems</a></h6>
           <p className="m-2">A repair will almost always be cheaper than a replacement computer, but if the repair is
             looking to cost
             50-70% of the cost of a replacement then you should always consider the age/condition of the machine
@@ -58,7 +58,7 @@ export default function Home() {
 
         <div className=" m-2 rounded-2xl inline-block max-w-sm shadow-lg overflow-hidden">
           <img src="/assets/Visiting-Card.12ed331b.12ed331b.jpg" alt="SK Computer Visiting Card" />
-          <h6><a className="text-2xl font-semibold" href="#">OUR AIM AND MISSION</a></h6>
+          <h6><a className="text-2xl font-semibold underline hover:no-underline" href="#">OUR AIM AND MISSION</a></h6>
           <p className="m-2">Sk Computer and printers saharsa . Our Aim is to provide Best Solution to fix your gadgets
             i.e: your
             personal/bussiness PC or laptop, Inktank Printer(HP, Epson, Brother etc) ,Laserjet Printer , Dot Matrix
