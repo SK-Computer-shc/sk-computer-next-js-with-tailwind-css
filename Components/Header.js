@@ -5,14 +5,11 @@ import Image from 'next/image'
 
 const Header = () => {
     return (
-        <div>
+        <div className='sticky top-0 z-50 bg-slate-50'>
             <nav className="flex flex-col justify-between items-center md:flex-row text-slate-800 border-2 drop-shadow-lg rounded-2xl">
-                <Link href='/' >  </Link> <Image src="/sk-computer-logo.jpg" width={40} height={40} title="SK Computer Saharsa"
-                    className="cursor-pointer mx-2 my-4 border-2 rounded-xl shadow-sm hover:drop-shadow-lg"
-                    alt="logo SK Computer saharsa-Bihar"/>
-                
+                <Link href="/"><a className="mx-4" ><Image className="border-2 rounded-xl" src="/sk-computer-logo.jpg" alt="Logo sk-computer saharsa" width={45} height={45} /></a></Link>
 
-                {/* navbar ka responsiveness fix krna hai Responsive nhi hai */}
+
                 <ul className=" flex flex-wrap" id="navmenu">
                     <li className="p-6"> <Link href='/' ><a
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"

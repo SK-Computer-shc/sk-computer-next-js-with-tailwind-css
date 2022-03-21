@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from "next/head"
+import Image from 'next/image'
+import ContactPic from '../public/assets/Contact-us-sk-computer.be495efb.be495efb.png'
 
 const contact = () => {
   return (
@@ -13,14 +15,15 @@ const contact = () => {
         <link rel="icon" href="/favicon.ico?" />
       </Head>
 
-      <div className="relative mx-4 my-1">
+      <div className="mx-4 my-1">
         <h2
-          className="font-serif text-5xl font-semibold text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          CONTACT US</h2>
-        <img className="w-full max-h-96 shadow-2xl rounded-2xl" src="/assets/Contact-us-sk-computer.be495efb.be495efb.png"
+          className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-serif text-3xl font-semibold text-slate-800 ">
+          CONTACT US
+        </h2>
+        <Image className='rounded-2xl' src={ContactPic} width={1350} height={400}
           alt="Contact SK Computer" />
       </div>
-      <h3 className="font-serif text-2xl font-extrabold text-center text-inherit">WE'RE READY, LET'S TALK.</h3>
+      <h3 className="font-serif text-2xl font-extrabold text-center text-inherit">WE ARE READY, LET US TALK.</h3>
       <div
         className="max-w-screen-xl mt-2 flex flex-wrap justify-evenly py-10 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
         <div className="py-4">
