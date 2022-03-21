@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Image from 'next/Image'
 
 const about = () => {
   return (
@@ -29,23 +30,22 @@ const about = () => {
           </p>
         </div>
         <div className="h-full max-w-md ">
-          <img className="rounded-2xl" src="/assets/About-us-Temp.eb2ca1dd.eb2ca1dd.jpg" alt="About Sk Computer image" />
+          <Image className="rounded-2xl" src="/assets/About-us-Temp.eb2ca1dd.eb2ca1dd.jpg" width={600} height={350} alt="About Sk Computer image" />
         </div>
       </div>
       <div className="flex flex-wrap justify-evenly mt-20">
         <div className="max-w-xs h-auto text-center">
-          <img className="rounded-full" src="/assets/Nitish-Jha.3940cec7.3940cec7.jpg" alt="Nitish jha(CEO of SK Computer)" />
-          <a href=""> <img src="" alt="" /></a>
+          <Image className="rounded-full" src="/assets/Nitish-Jha.3940cec7.3940cec7.jpg" width={350} height={350} alt="Nitish jha(CEO of SK Computer)"/>
           <h5>Nitish Jha</h5>
           <p>CEO and Head Devloper (Coder)</p>
         </div>
         <div className="max-w-xs h-auto text-center">
-          <img className="rounded-full" src="/assets/rishabh-raj.ad8040ce.ad8040ce.jpg" alt="Rishabh Raj" />
+          <Image className="rounded-full" src="/assets/rishabh-raj.ad8040ce.ad8040ce.jpg" width={350} height={350} alt="Rishabh Raj" />
           <h5>Rishabh Raj</h5>
           <p>Programmer and Gamer</p>
         </div>
         <div className="max-w-xs h-auto text-center">
-          <img className="rounded-full" src="/assets/Pranav-Jha.34012888.34012888.jpg" alt="Pranav Jha" />
+          <Image className="rounded-full" src="/assets/Pranav-Jha.34012888.34012888.jpg" width={350} height={350} alt="Pranav Jha" />
           <h5>Pranav jha</h5>
           <p>Brand Ambassador</p>
         </div>

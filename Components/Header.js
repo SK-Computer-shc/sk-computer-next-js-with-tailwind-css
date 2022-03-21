@@ -1,15 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 const Header = () => {
     return (
         <div>
             <nav className="flex flex-col justify-between items-center md:flex-row text-slate-800 border-2 drop-shadow-lg rounded-2xl">
-                <Link id="navlogo1" href="/"><img src="/sk-computer-logo.jpg" title="SK Computer Saharsa"
-                    className="cursor-pointer w-10 h-10 mx-2 my-4 border-2 rounded-xl shadow-sm hover:drop-shadow-lg"
-                    alt="logo SK Computer saharsa-Bihar" />
-                </Link>
+                <Link href='/' >  </Link> <Image src="/sk-computer-logo.jpg" width={40} height={40} title="SK Computer Saharsa"
+                    className="cursor-pointer mx-2 my-4 border-2 rounded-xl shadow-sm hover:drop-shadow-lg"
+                    alt="logo SK Computer saharsa-Bihar"/>
+                
 
                 {/* navbar ka responsiveness fix krna hai Responsive nhi hai */}
                 <ul className=" flex flex-wrap" id="navmenu">
