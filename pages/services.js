@@ -1,11 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-
+import Image from 'next/image'
 const services = () => {
     return (
-
-
-
         <div>
             <Head>
                 <title>Services Offered | SK Computer</title>
@@ -17,9 +14,9 @@ const services = () => {
             </Head>
 
             <div
-                className="Servicelanding border-2 flex justify-center items-center mx-8 my-2 rounded-2xl overflow-hidden shadow-md">
-                <h1 className="absolute text-6xl  font-serif font-bold text-yellow-50">SERVICES</h1>
-                <img src="/assets/service-main.eea7dfab.eea7dfab.jpg" alt="SK Computer Service" className="m-auto w-full max-h-96 " />
+                className="Servicelanding relative border-2 flex justify-center items-center mx-8 my-2 rounded-2xl overflow-hidden shadow-md">
+                <h1 className="z-50 absolute text-4xl font-serif font-bold text-yellow-50">SERVICES</h1>
+                <Image src="/assets/service-main.eea7dfab.eea7dfab.jpg" alt="SK Computer Service" className="m-auto" width={1350} height={384} />
             </div>
 
             <div className="">
@@ -28,7 +25,7 @@ const services = () => {
 
             <div className="containe flex flex-wrap justify-center">
                 <div className="service1 w-96 m-4 border-2 rounded-2xl overflow-hidden shadow-slate-500 shadow-lg">
-                    <img src="/assets/sk-computer-store-1.39c83483.39c83483.jpg" alt="SK Computer Store" className="" />
+                    <Image src="/assets/sk-computer-store-1.39c83483.39c83483.jpg" alt="SK Computer Store" className="" width={384} height={200} />
                     <a href="#" className="font-serif font-bold underline hover:no-underline">
                         <h3>
                             Best Computer Store In Saharsa Bihar
@@ -40,7 +37,7 @@ const services = () => {
                 </div>
 
                 <div className="service2 w-96 m-4 border-2 rounded-2xl overflow-hidden shadow-slate-500 shadow-lg">
-                    <img src="/assets/Printer-store.c652a816.c652a816.jpg" alt="SK Printer Store" />
+                    <Image src="/assets/Printer-store.c652a816.c652a816.jpg" alt="SK Printer Store" width={384} height={200}/>
                     <a href="#" className="font-serif font-bold underline hover:no-underline">
                         <h3>
                             Best printer Sell and Service Center In Saharsa
@@ -53,7 +50,7 @@ const services = () => {
                 </div>
 
                 <div className="service3 w-96 m-4 border-2 rounded-2xl overflow-hidden shadow-slate-500 shadow-lg">
-                    <img src="/assets/sk-computer-service-center.8f8c9170.8f8c9170.jpg" alt="Desktop, Laptop And Printer Services" />
+                    <Image src="/assets/sk-computer-service-center.8f8c9170.8f8c9170.jpg" alt="Desktop, Laptop And Printer Services" width={384} height={200} />
                     <a href="#" className="font-serif font-bold underline hover:no-underline">
                         <h3>
                             Service center
@@ -65,7 +62,7 @@ const services = () => {
                 </div>
 
                 <div className="service4 w-96 m-4 border-2 rounded-2xl overflow-hidden shadow-slate-500 shadow-lg">
-                    <img src="/assets/Repair-center-Sk-Computer-saharsa.58553bc2.58553bc2.jpg" alt="Repair Center" />
+                    <Image src="/assets/Repair-center-Sk-Computer-saharsa.58553bc2.58553bc2.jpg" alt="Repair Center" width={384} height={200} />
                     <a href="#" className="font-serif font-bold underline hover:no-underline">
                         <h3>
                             Best PC Repair Center
