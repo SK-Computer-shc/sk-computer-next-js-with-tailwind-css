@@ -32,7 +32,7 @@ const services = () => {
                         </h3>
                     </a>
                     <p>
-                        We Sell Branded and Assembled Computers, Laptops and all it's parts and accessories.
+                        We Sell Branded and Assembled Computers, Laptops and all its parts and accessories.
                     </p>
                 </div>
 
