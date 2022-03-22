@@ -15,9 +15,9 @@ const contact = () => {
         <link rel="icon" href="/favicon.ico?" />
       </Head>
 
-      <div className="mx-4 my-1">
+      <div className="mx-4 relative my-1">
         <h2
-          className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-serif text-3xl font-semibold text-slate-800 ">
+          className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-serif text-4xl font-semibold text-slate-800 ">
           CONTACT US
         </h2>
         <Image className='rounded-2xl' src={ContactPic} width={1350} height={400}
