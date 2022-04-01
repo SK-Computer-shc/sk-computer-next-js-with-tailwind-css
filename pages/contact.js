@@ -29,7 +29,7 @@ const contact = () => {
         <div className="py-4">
           <form action="" />
           <h6 className="font-mono font-semibold">FULL NAME</h6>
-          <input type="text" name="name" value=""
+          <input type="text" name="name"
             className="bg-gray-300 inline-block w-full text-gray-900 p-1 rounded-lg focus:outline-none focus:shadow-outline"
             placeholder="Enter Your Name" />
           <h6 className="font-mono font-semibold mt-3">EMAIL</h6>
