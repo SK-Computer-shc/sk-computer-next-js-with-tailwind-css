@@ -8,7 +8,7 @@ const ujjwal = () => {
                 Kaahey la aise krta hai be zindgi se pareshan hai ka
             </div>
             <div>
-                <Image className='rounded-r-full absolute' src='/ujjwal.jpg' width={200} height={200} />
+                <Image className='rounded-r-full absolute' src='/ujjwal.jpg' width={200} height={200} alt="ujjwal ka photo" />
             </div>
         </div>
     )
