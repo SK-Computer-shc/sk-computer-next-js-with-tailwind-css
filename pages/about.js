@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const about = () => {
   return (
@@ -44,10 +45,10 @@ const about = () => {
           <h5>Rishabh Raj</h5>
           <p>Programmer and Gamer</p>
         </div>
-        <div className="text-center">
-          <Image className="rounded-full" src="/assets/Pranav-Jha.34012888.34012888.jpg" width={350} height={350} alt="Pranav Jha" />
-          <h5>Pranav jha</h5>
-          <p>Brand Ambassador</p>
+        <div className="text-center items-center">
+          <Image className="rounded-full" src="/ujjwal.jpg" width={350} height={350} alt="Pranav Jha" />
+          <Link href={"/ujjwal"} passHref><h5>ujjwal</h5></Link>
+          <p>Motivator</p>
         </div>
       </div>
 
