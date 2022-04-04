@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 
-const Header = () => {
+const header = () => {
     return (
         <div className='sticky top-0 z-50 bg-slate-50'>
             <nav className="flex flex-col justify-between items-center md:flex-row text-slate-800 border-2 drop-shadow-lg rounded-2xl">
@@ -37,4 +37,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default header

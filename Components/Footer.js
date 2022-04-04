@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer() {
+function footer() {
   return (
     <div>
         <footer className="mt-10">
@@ -17,4 +17,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default footer
