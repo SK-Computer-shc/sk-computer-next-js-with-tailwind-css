@@ -14,9 +14,9 @@ const services = () => {
             </Head>
 
             <div
-                className="Servicelanding relative border-2 flex justify-center items-center mx-8 my-2 rounded-2xl overflow-hidden shadow-md">
-                <h1 className="z-50 absolute text-4xl font-serif font-bold text-yellow-50">SERVICES</h1>
-                <Image src="/assets/service-main.eea7dfab.eea7dfab.jpg" alt="SK Computer Service" className="m-auto" width={1350} height={384} />
+                className="relative my-1 mx-4 justify-center flex">
+                <h1 className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-serif text-4xl font-semibold text-slate-800 ">SERVICES</h1>
+                <Image src="/assets/service-main.eea7dfab.eea7dfab.jpg" alt="SK Computer Service" className="rounded-2xl" width={1350} height={400} />
             </div>
 
             <div className="">
