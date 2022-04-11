@@ -10,7 +10,7 @@ const header = () => {
                 <Link href="/"><a className="mx-4" ><Image className="border-2 rounded-xl" src="/sk-computer-logo.jpg" alt="Logo sk-computer saharsa" width={45} height={45} /></a></Link>
 
 
-                <ul className=" flex flex-wrap" id="navmenu">
+                <ul className="flex flex-col items-center justify-center transition-transform -translate-y-full transform md:translate-y-0 md:flex-row" id="navmenu">
                     <li className="p-6"> <Link href='/' ><a
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                         title="Home">Home</a></Link></li>
