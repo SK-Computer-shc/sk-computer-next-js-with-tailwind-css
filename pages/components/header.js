@@ -5,7 +5,7 @@ import { useRef } from 'react'
 
 
 const header = () => {
-    const toggleCart = () => {
+    const toggleNav = () => {
         if (ref.current.classList.contains('hidden')) {
             ref.current.classList.remove('hidden')
             ref.current.classList.add('block')
@@ -17,6 +17,7 @@ const header = () => {
 
     }
     const ref = useRef()
+    
     return (
         <div className='sticky top-0 z-50 bg-slate-50'>
             <nav className="flex flex-col justify-between items-center md:flex-row text-slate-800 border-2 drop-shadow-lg rounded-2xl">
@@ -37,7 +38,7 @@ const header = () => {
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                         title="Services offered">Services</a></Link></li>
                 </ul>
-                <a href="#" onClick={toggleCart} className="md:hidden absolute right-6 top-4">
+                <a href="#" onClick={toggleNav} className="md:hidden absolute right-6 top-4">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path d="M4 6h16M4 12h16M4 18h16" />
