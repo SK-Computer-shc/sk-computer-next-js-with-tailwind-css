@@ -17,7 +17,7 @@ const Post = () => {
     else{
       setService(false)
     }
-    console.log(pinJson, pin);
+    // console.log(pinJson, pin);
   }
 
 const onChangePin = (e) =>{
