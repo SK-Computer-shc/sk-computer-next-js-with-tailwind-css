@@ -19,7 +19,7 @@ const header = () => {
         }
 
     }
-    const ref = useRef()
+    const ref = useRef();
 
     return (
         <>
