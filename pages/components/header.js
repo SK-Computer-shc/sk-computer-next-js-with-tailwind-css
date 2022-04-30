@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRef, useState, useEffect } from 'react'
+import { useRef } from 'react'
 import { AiOutlineShoppingCart, AiFillCloseSquare, AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai'
 import { BsFillBagCheckFill } from "react-icons/Bs";
+import { MdOutlineRemoveShoppingCart } from 'react-icons/Md'
 
 
 const header = () => {
@@ -19,7 +20,7 @@ const header = () => {
         }
 
     }
-    const ref = useRef();
+    const ref=useRef();
 
     return (
         <>
@@ -62,36 +63,38 @@ const header = () => {
                     <li>
                         <div className='flex'>
                             <div className='w-2/3 font-semibold'>Printer</div>
-                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl'/> 1 <AiFillPlusCircle  className='m-1 text-xl'/></div>
+                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> 1 <AiFillPlusCircle className='m-1 text-xl' /></div>
                         </div>
                     </li>
                     <li>
                         <div className='flex'>
                             <div className='w-2/3 font-semibold'>Printer</div>
-                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl'/> 1 <AiFillPlusCircle  className='m-1 text-xl'/></div>
+                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> 1 <AiFillPlusCircle className='m-1 text-xl' /></div>
                         </div>
                     </li>
                     <li>
                         <div className='flex'>
                             <div className='w-2/3 font-semibold'>Printer</div>
-                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl'/> 1 <AiFillPlusCircle  className='m-1 text-xl'/></div>
+                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> 1 <AiFillPlusCircle className='m-1 text-xl' /></div>
                         </div>
                     </li>
                     <li>
                         <div className='flex'>
                             <div className='w-2/3 font-semibold'>Printer</div>
-                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl'/> 1 <AiFillPlusCircle  className='m-1 text-xl'/></div>
+                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> 1 <AiFillPlusCircle className='m-1 text-xl' /></div>
                         </div>
                     </li>
                     <li>
                         <div className='flex'>
                             <div className='w-2/3 font-semibold'>Printer</div>
-                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl'/> 1 <AiFillPlusCircle  className='m-1 text-xl'/></div>
+                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> 1 <AiFillPlusCircle className='m-1 text-xl' /></div>
                         </div>
                     </li>
-                    
                 </ol>
-                <button className="flex mx-auto mt-6 text-white bg-orange-600 border-0 py-2 px-5 focus:outline-none hover:bg-orange-700 rounded"> <BsFillBagCheckFill className='m-1'/>Checkout</button>
+                <div className='flex justify-center'>
+                    <button className="flex mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <BsFillBagCheckFill className='m-1' />Checkout</button>
+                    <button className="flex mx-2 mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <MdOutlineRemoveShoppingCart className='m-1' />ClearCart</button>
+                </div>
             </div >
         </>
     )
