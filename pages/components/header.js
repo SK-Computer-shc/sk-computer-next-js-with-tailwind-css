@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useRef } from 'react'
 import { AiOutlineShoppingCart, AiFillCloseSquare, AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai'
-import { BsFillBagCheckFill } from "react-icons/Bs";
+import { BsFillBagCheckFill } from 'react-icons/Bs'
 import { MdOutlineRemoveShoppingCart } from 'react-icons/Md'
 
 
@@ -92,8 +92,8 @@ const Header = () => {
                     </li>
                 </ol>
                 <div className='flex justify-center'>
-                    <button className="flex mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <BsFillBagCheckFill className='m-1' />Checkout</button>
-                    <button className="flex mx-2 mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <MdOutlineRemoveShoppingCart className='m-1' />ClearCart</button>
+                    <button className="flex mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <BsFillBagCheckFill className='m-1'/>Checkout</button>
+                    <button className="flex mx-2 mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <MdOutlineRemoveShoppingCart className='m-1'/>ClearCart</button>
                 </div>
             </div >
         </>
