@@ -7,7 +7,7 @@ import { BsFillBagCheckFill } from "react-icons/Bs";
 import { MdOutlineRemoveShoppingCart } from 'react-icons/Md'
 
 
-const header = () => {
+const Header = () => {
 
     const toggleCart = () => {
         if (ref.current.classList.contains('translate-x-full')) {
@@ -20,7 +20,7 @@ const header = () => {
         }
 
     }
-    const ref=useRef();
+    const ref = useRef();
 
     return (
         <>
@@ -100,4 +100,4 @@ const header = () => {
     )
 }
 
-export default header
+export default Header
