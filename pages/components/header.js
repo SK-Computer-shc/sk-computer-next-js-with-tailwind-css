@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useRef } from 'react'
 import { AiOutlineShoppingCart, AiFillCloseSquare, AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai'
-import { BsFillBagCheckFill } from 'react-icons/Bs'
-import { MdOutlineRemoveShoppingCart } from 'react-icons/Md'
+import { BsFillBagCheckFill } from 'react-icons/bs'
+import { MdOutlineRemoveShoppingCart } from 'react-icons/md'
 
 
 const Header = () => {
