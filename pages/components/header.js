@@ -7,8 +7,8 @@ import { BsFillBagCheckFill } from 'react-icons/bs'
 import { MdOutlineRemoveShoppingCart } from 'react-icons/md'
 
 
-const Header = () => {
-
+const Header = (cart, addToCart, removeFromCart, clearCart, subTotal) => {
+    //  console.log(cart, addToCart, removeFromCart, clearCart, subTotal);
     const toggleCart = () => {
         if (ref.current.classList.contains('translate-x-full')) {
             ref.current.classList.remove('translate-x-full')
@@ -59,41 +59,21 @@ const Header = () => {
                 <h2 className='text-lg'>Your Shopping Cart</h2>
                 <span onClick={toggleCart} className='cursor-pointer absolute top-3 right-2 text-3xl'><AiFillCloseSquare /></span>
                 <ol className='list-decimal'>
+                    {Object.keys(cart).length ==0 && <div>Your Cart is Empty</div>}
 
-                    <li>
-                        <div className='flex'>
-                            <div className='w-2/3 font-semibold'>Printer</div>
-                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> 1 <AiFillPlusCircle className='m-1 text-xl' /></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='flex'>
-                            <div className='w-2/3 font-semibold'>Printer</div>
-                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> 1 <AiFillPlusCircle className='m-1 text-xl' /></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='flex'>
-                            <div className='w-2/3 font-semibold'>Printer</div>
-                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> 1 <AiFillPlusCircle className='m-1 text-xl' /></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='flex'>
-                            <div className='w-2/3 font-semibold'>Printer</div>
-                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> 1 <AiFillPlusCircle className='m-1 text-xl' /></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='flex'>
-                            <div className='w-2/3 font-semibold'>Printer</div>
-                            <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> 1 <AiFillPlusCircle className='m-1 text-xl' /></div>
-                        </div>
-                    </li>
+                    {Object.keys(cart).map((k) => {
+                        return <li key={k}>
+                            <div className='flex'>
+                                <div className='w-2/3 font-semibold'>{cart[k].name}</div>
+                                <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> {cart[k].qty} <AiFillPlusCircle className='m-1 text-xl' /></div>
+                            </div>
+                        </li>
+                    })}
+
                 </ol>
                 <div className='flex justify-center'>
-                    <button className="flex mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <BsFillBagCheckFill className='m-1'/>Checkout</button>
-                    <button className="flex mx-2 mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <MdOutlineRemoveShoppingCart className='m-1'/>ClearCart</button>
+                    <button className="flex mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <BsFillBagCheckFill className='m-1' />Checkout</button>
+                    <button onClick={clearCart} className="flex mx-2 mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <MdOutlineRemoveShoppingCart className='m-1' />ClearCart</button>
                 </div>
             </div >
         </>
