@@ -7,8 +7,8 @@ import { BsFillBagCheckFill } from 'react-icons/bs'
 import { MdOutlineRemoveShoppingCart } from 'react-icons/md'
 
 
-const Header = (cart, addToCart, removeFromCart, clearCart, subTotal) => {
-    //  console.log(cart, addToCart, removeFromCart, clearCart, subTotal);
+const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
+    console.log(Cart, addToCart, removeFromCart, clearCart, subTotal);
     const toggleCart = () => {
         if (ref.current.classList.contains('translate-x-full')) {
             ref.current.classList.remove('translate-x-full')
@@ -59,13 +59,13 @@ const Header = (cart, addToCart, removeFromCart, clearCart, subTotal) => {
                 <h2 className='text-lg'>Your Shopping Cart</h2>
                 <span onClick={toggleCart} className='cursor-pointer absolute top-3 right-2 text-3xl'><AiFillCloseSquare /></span>
                 <ol className='list-decimal'>
-                    {Object.keys(cart).length ==0 && <div>Your Cart is Empty</div>}
+                    {Object.keys(Cart).length==0 && <div className='mt-4 font-bold'>Your Cart is Empty</div>}
 
-                    {Object.keys(cart).map((k) => {
-                        return <li key={k}>
+                    {Object.keys(Cart).map((k)=>{
+                        return<li key={k}>
                             <div className='flex'>
-                                <div className='w-2/3 font-semibold'>{cart[k].name}</div>
-                                <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle className='m-1 text-xl' /> {cart[k].qty} <AiFillPlusCircle className='m-1 text-xl' /></div>
+                                <div className='w-2/3 font-semibold'>{Cart[k].name}</div>
+                                <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle onClick={()=>removeFromCart(k,1,300,'Printer service','no','black')} className='m-1 cursor-pointer text-xl' /> {Cart[k].qty} <AiFillPlusCircle onClick={()=>addToCart(k,1,300,'Printer service','no','black')} className='m-1 cursor-pointer text-xl' /></div>
                             </div>
                         </li>
                     })}
