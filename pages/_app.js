@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
 
  
   const saveCart = (myCart) => {
-    // sringify mycart
+    // stringify mycart
     localStorage.setItem("Cart", JSON.stringify(myCart))
     let subt = 0;
     let keys = Object.keys(myCart);
@@ -62,7 +62,7 @@ function MyApp({ Component, pageProps }) {
     saveCart(myCart)
   }
   return <>
-    <Header  Cart={Cart} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} subTotal={subTotal} />
+    <Header Cart={Cart} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} subTotal={subTotal} />
     <Component Cart={Cart} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} subTotal={subTotal} {...pageProps} />
     <Footer />
   </>

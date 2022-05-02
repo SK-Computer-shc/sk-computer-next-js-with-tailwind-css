@@ -65,7 +65,7 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                         return<li key={k}>
                             <div className='flex'>
                                 <div className='w-2/3 font-semibold'>{Cart[k].name}</div>
-                                <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle onClick={()=>removeFromCart(k,1,300,'Printer service','no','black')} className='m-1 cursor-pointer text-xl' /> {Cart[k].qty} <AiFillPlusCircle onClick={()=>addToCart(k,1,300,'Printer service','no','black')} className='m-1 cursor-pointer text-xl' /></div>
+                                <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle onClick={()=>removeFromCart(k,1,Cart[k].price,Cart[k].name,Cart[k].size,Cart[k].varient)} className='m-1 cursor-pointer text-xl' /> {Cart[k].qty} <AiFillPlusCircle onClick={()=>addToCart(k,1,Cart[k].price,Cart[k].name,Cart[k].size,Cart[k].varient)} className='m-1 cursor-pointer text-xl' /></div>
                             </div>
                         </li>
                     })}
