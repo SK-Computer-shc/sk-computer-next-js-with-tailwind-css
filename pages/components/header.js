@@ -30,18 +30,21 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
 
 
                     <ul className="flex flex-wrap md:mr-10" id="navmenu">
-                        <li className="md:m-6 m-3 "> <Link href='/' ><a
+                        <li className="md:m-4 m-3 "> <Link href='/' ><a
                             className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                             title="Home">Home</a></Link></li>
-                        <li className="md:m-6 m-3 "><Link href='/contact'><a
+                        <li className="md:m-4 m-3 "><Link href='/contact'><a
                             className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                             title="Contact US">Contact</a></Link></li>
-                        <li className="md:m-6 m-3 "><Link href='/about'><a
+                        <li className="md:m-4 m-3 "><Link href='/about'><a
                             className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                             title="About SK Computer">About Us</a></Link></li>
-                        <li className="md:m-6 m-3 "><Link href='/services' ><a
+                        <li className="md:m-4 m-3 "><Link href='/services' ><a
                             className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                             title="Services offered">Services</a></Link></li>
+                        <li className="md:m-4 m-3 "><Link href='/products' ><a
+                            className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
+                            title="Services offered">Products</a></Link></li>
                     </ul>
                     <a href="#" className="md:hidden absolute left-6 top-4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -51,21 +54,21 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                     </a>
                 </nav>
 
-            </div>
             <div onClick={toggleCart} className='z-50 absolute right-6 top-4 cursor-pointer text-3xl md:right-3 md:top-5 md:text-3xl'>
-                <a title='Your Shopping cart' className=''><AiOutlineShoppingCart /></a>
+                <a title='Your Shopping cart'><AiOutlineShoppingCart /></a>
+            </div>
             </div>
             <div ref={ref} className='absolute w-72 top-0 right-0 z-50 h-full bg-orange-200 p-10 transform transition-transform translate-x-full'>
                 <h2 className='text-lg'>Your Shopping Cart</h2>
                 <span onClick={toggleCart} className='cursor-pointer absolute top-3 right-2 text-3xl'><AiFillCloseSquare /></span>
                 <ol className='list-decimal'>
-                    {Object.keys(Cart).length==0 && <div className='mt-4 font-bold'>Your Cart is Empty</div>}
+                    {Object.keys(Cart).length == 0 && <div className='mt-4 font-bold'>Your Cart is Empty</div>}
 
-                    {Object.keys(Cart).map((k)=>{
-                        return<li key={k}>
+                    {Object.keys(Cart).map((k) => {
+                        return <li key={k}>
                             <div className='flex'>
                                 <div className='w-2/3 font-semibold'>{Cart[k].name}</div>
-                                <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle onClick={()=>removeFromCart(k,1,Cart[k].price,Cart[k].name,Cart[k].size,Cart[k].varient)} className='m-1 cursor-pointer text-xl' /> {Cart[k].qty} <AiFillPlusCircle onClick={()=>addToCart(k,1,Cart[k].price,Cart[k].name,Cart[k].size,Cart[k].varient)} className='m-1 cursor-pointer text-xl' /></div>
+                                <div className='w-1/3 flex justify-center font-semibold'><AiFillMinusCircle onClick={() => removeFromCart(k, 1, Cart[k].price, Cart[k].name, Cart[k].size, Cart[k].varient)} className='m-1 cursor-pointer text-xl' /> {Cart[k].qty} <AiFillPlusCircle onClick={() => addToCart(k, 1, Cart[k].price, Cart[k].name, Cart[k].size, Cart[k].varient)} className='m-1 cursor-pointer text-xl' /></div>
                             </div>
                         </li>
                     })}
