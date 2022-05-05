@@ -75,7 +75,7 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
 
                 </ol>
                 <div className='flex justify-center'>
-                    <button className="flex mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <BsFillBagCheckFill className='m-1' />Checkout</button>
+                    <Link href="/cheakout"><a className="flex mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"><BsFillBagCheckFill className='m-1'/>Checkout </a></Link>
                     <button onClick={clearCart} className="flex mx-2 mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <MdOutlineRemoveShoppingCart className='m-1' />ClearCart</button>
                 </div>
             </div >
