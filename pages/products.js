@@ -18,7 +18,7 @@ const Products = () => {
                             </div>
                         </div>
                         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                        <Link href='/product/product1'><a className="block relative h-48 rounded overflow-hidden">
+                        <Link href='/product/product2'><a className="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
                             </a></Link>
                             <div className="mt-4">
