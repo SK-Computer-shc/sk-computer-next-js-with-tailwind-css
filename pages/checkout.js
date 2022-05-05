@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai'
 
-const Cheakout = ({ Cart, addToCart, removeFromCart, subTotal }) => {
+const Checkout = ({ Cart, addToCart, removeFromCart, subTotal }) => {
   return (
     <div className=''>
       <h2 className='text-center text-2xl font-serif font-semibold'>Checkout</h2>
@@ -74,4 +74,4 @@ const Cheakout = ({ Cart, addToCart, removeFromCart, subTotal }) => {
   )
 }
 
-export default Cheakout
+export default Checkout
