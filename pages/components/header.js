@@ -8,7 +8,7 @@ import { MdOutlineRemoveShoppingCart } from 'react-icons/md'
 
 
 const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
-    console.log(Cart, addToCart, removeFromCart, clearCart, subTotal);
+    // console.log(Cart, addToCart, removeFromCart, clearCart, subTotal);
     const toggleCart = () => {
         if (ref.current.classList.contains('translate-x-full')) {
             ref.current.classList.remove('translate-x-full')
@@ -54,9 +54,9 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                     </a>
                 </nav>
 
-            <div onClick={toggleCart} className='z-50 absolute right-6 top-4 cursor-pointer text-3xl md:right-3 md:top-5 md:text-3xl'>
-                <a title='Your Shopping cart'><AiOutlineShoppingCart /></a>
-            </div>
+                <div onClick={toggleCart} className='z-50 absolute right-6 top-4 cursor-pointer text-3xl md:right-3 md:top-5 md:text-3xl'>
+                    <a title='Your Shopping cart'><AiOutlineShoppingCart /></a>
+                </div>
             </div>
             <div ref={ref} className='absolute w-72 top-0 right-0 z-50 h-full bg-orange-200 p-10 transform transition-transform translate-x-full'>
                 <h2 className='text-lg'>Your Shopping Cart</h2>
@@ -74,8 +74,11 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                     })}
 
                 </ol>
+                <div className='-ml-4 text-lg font-semibold text-slate-600'>
+                    Subtotal= ₹{subTotal}
+                </div>
                 <div className='flex justify-center'>
-                    <Link href="/cheakout"><a className="flex mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"><BsFillBagCheckFill className='m-1'/>Checkout </a></Link>
+                    <Link href="/cheakout"><a className="flex mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"><BsFillBagCheckFill className='m-1' />Checkout </a></Link>
                     <button onClick={clearCart} className="flex mx-2 mt-6 text-white bg-orange-600 border-0 py-2 px-3 focus:outline-none hover:bg-orange-700 rounded"> <MdOutlineRemoveShoppingCart className='m-1' />ClearCart</button>
                 </div>
             </div >

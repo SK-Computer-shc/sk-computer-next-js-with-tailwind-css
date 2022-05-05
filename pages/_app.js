@@ -12,6 +12,8 @@ function MyApp({ Component, pageProps }) {
     try {
       if (localStorage.getItem("Cart")){
         setCart(JSON.parse(localStorage.getItem("Cart")))
+        // if save cart is cart then subt will show subtotal zero on page reload
+        saveCart(JSON.parse(localStorage.getItem("Cart")))
       }
     } catch (error) {
       console.log(Error)
