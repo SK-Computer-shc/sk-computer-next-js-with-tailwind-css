@@ -10,7 +10,7 @@ const Post = ({addToCart}) => {
   const [service, setService] = useState()
 
   const cheakServiceability = async () => {
-    let pins = await fetch('https://github.com/nitish-jha-hub/sk-computer-next-js-with-tailwind-css/blob/main/pages/api/pincodes.js')
+    let pins = await fetch('http://localhost:3000/api/pincodes')
     let pinJson = await pins.json()
 
     if (pinJson.includes(parseInt(pin))) {
