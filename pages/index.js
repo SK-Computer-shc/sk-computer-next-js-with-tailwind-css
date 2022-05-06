@@ -13,7 +13,7 @@ export default function home() {
         <meta name="author" content="Nitish Jha" />
         <link rel="icon" href="/favicon.ico?" />
       </Head>
-      <div className='text-2xl border-l-4 border-b-2 text-gray-600'>
+      <div className='text-2xl font-mono border-l-4 border-b-2 text-gray-400'>
         <marquee behavior="scroll" direction="left" height="" width="100%">Hello, Welcome to SK Computer saharsa, Bihar </marquee>
       </div>
       <div className="flex flex-wrap shadow-sm my-2 rounded-xl font-mono justify-evenly">

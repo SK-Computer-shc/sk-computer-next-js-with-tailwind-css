@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import { AiOutlineShoppingCart, AiFillCloseSquare, AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai'
 import { BsFillBagCheckFill } from 'react-icons/bs'
 import { MdOutlineRemoveShoppingCart } from 'react-icons/md'
+import { VscAccount } from 'react-icons/vsc'
 
 
 const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
@@ -27,7 +28,7 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
         <div className='sticky top-0 z-40'>
             <nav className=" flex bg-slate-50 flex-col justify-between items-center md:flex-row text-slate-800 border-2 drop-shadow-lg rounded-2xl">
                 <Link href="/"><a className="mx-4" ><Image className="border-2 border-zinc-900 rounded-xl" src="/sk-computer-logo.jpg" alt="Logo sk-computer saharsa" width={45} height={45} /></a></Link>
-                <ul className="flex flex-wrap md:mr-10" id="navmenu">
+                <ul className="flex flex-wrap md:mr-20" id="navmenu">
                     <li className="md:m-4 m-3 "> <Link href='/' ><a
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                         title="Home">Home</a></Link></li>
@@ -52,8 +53,9 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                 </a>
             </nav>
 
-            <div onClick={toggleCart} className='z-50 absolute right-6 top-4 cursor-pointer text-3xl md:right-3 md:top-5 md:text-3xl'>
-                <a title='Your Shopping cart'><AiOutlineShoppingCart /></a>
+            <div className='z-10 absolute flex right-6 top-4 cursor-pointer text-3xl md:right-3 md:text-3xl'>
+            <Link href='/login'><a><VscAccount className='mx-2 text-slate-800' /> </a></Link>
+            <a title='Your Shopping cart'><AiOutlineShoppingCart onClick={toggleCart} className='text-slate-800' /></a>
             </div>
             <div ref={ref} className='absolute w-72 top-0 right-0 z-50 h-screen bg-orange-200 p-10 transform transition-transform translate-x-full'>
                 <h2 className='text-lg'>Your Shopping Cart</h2>
