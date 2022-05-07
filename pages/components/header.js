@@ -32,19 +32,19 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                 <div className='hidden lg:inline-block'><Link href="/"><a className="" ><Image src="/assets/skcomputerlogo2.png" alt="Logo sk-computer saharsa" width={175} height={55} /></a></Link></div>
                 </div>
                 <ul className="flex flex-wrap md:mr-20" id="navmenu">
-                    <li className="md:m-4 m-3 "> <Link href='/' ><a
+                    <li className="my-3 mx-2 "> <Link href='/' ><a
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                         title="Home">Home</a></Link></li>
-                    <li className="md:m-4 m-3 "><Link href='/contact'><a
+                    <li className="my-3 mx-2 "><Link href='/contact'><a
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                         title="Contact US">Contact</a></Link></li>
-                    <li className="md:m-4 m-3 "><Link href='/about'><a
+                    <li className="my-3 mx-2 "><Link href='/about'><a
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                         title="About SK Computer">About Us</a></Link></li>
-                    <li className="md:m-4 m-3 "><Link href='/services' ><a
+                    <li className="my-3 mx-2 "><Link href='/services' ><a
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                         title="Services offered">Services</a></Link></li>
-                    <li className="md:m-4 m-3 "><Link href='/products' ><a
+                    <li className="my-3 mx-2 "><Link href='/products' ><a
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
                         title="Services offered">Products</a></Link></li>
                 </ul>
