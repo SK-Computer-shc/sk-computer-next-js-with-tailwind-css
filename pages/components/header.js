@@ -26,8 +26,11 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
     return (
 
         <div className='sticky top-0 z-40'>
-            <nav className=" flex bg-slate-50 flex-col justify-between items-center md:flex-row text-slate-800 border-2 drop-shadow-lg rounded-2xl">
+            <nav className=" flex bg-slate-50 flex-col justify-between items-center md:flex-row text-slate-800 drop-shadow-lg rounded-b-2xl">
+                <div>
                 <Link href="/"><a className="mx-4" ><Image className="border-2 border-zinc-900 rounded-xl" src="/sk-computer-logo.jpg" alt="Logo sk-computer saharsa" width={45} height={45} /></a></Link>
+                <div className='hidden lg:inline-block'><Link href="/"><a className="" ><Image src="/assets/skcomputerlogo2.png" alt="Logo sk-computer saharsa" width={175} height={55} /></a></Link></div>
+                </div>
                 <ul className="flex flex-wrap md:mr-20" id="navmenu">
                     <li className="md:m-4 m-3 "> <Link href='/' ><a
                         className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
