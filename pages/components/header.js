@@ -33,20 +33,20 @@ const Header = ({ Cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                 </div>
                 <ul className="flex flex-wrap md:mr-20" id="navmenu">
                     <li className="md:m-4 m-3 "> <Link href='/' ><a
-                        className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
+                        className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 drop-shadow-lg"
                         title="Home">Home</a></Link></li>
                     <li className="md:m-4 m-3 "><Link href='/contact'><a
-                        className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
+                        className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 drop-shadow-lg"
                         title="Contact US">Contact</a></Link></li>
                     <li className="md:m-4 m-3 "><Link href='/about'><a
-                        className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
+                        className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 drop-shadow-lg"
                         title="About SK Computer">About Us</a></Link></li>
                     <li className="md:m-4 m-3 "><Link href='/services' ><a
-                        className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
+                        className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 drop-shadow-lg"
                         title="Services offered">Services</a></Link></li>
                     <li className="md:m-4 m-3 "><Link href='/products' ><a
-                        className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 hover:drop-shadow-lg"
-                        title="Services offered">Products</a></Link></li>
+                        className="p-2 rounded-xl cursor-pointer shadow-md bg-slate-50 hover:bg-slate-100 drop-shadow-lg"
+                        title="Our Products">Products</a></Link></li>
                 </ul>
                 <a href="#" className="md:hidden absolute left-6 top-4">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
